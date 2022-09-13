@@ -27,25 +27,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         auth.jdbcAuthentication().dataSource(dataSource);
 
-        auth.jdbcAuthentication().dataSource(dataSource)
-                .withDefaultSchema()
-                .withUser("admin")
-                .password("pass")
-                .roles("ADMIN", "USER")
-                .and()
-                .withUser("user")
-                .password("pass")
-                .roles("USER");
-
-
-        auth.inMemoryAuthentication()
-                .withUser("admin")
-                .password("pass")
-                .roles("ADMIN", "USER")
-                .and()
-                .withUser("user")
-                .password("pass")
-                .roles("USER");
+//        auth.jdbcAuthentication().dataSource(dataSource)
+//                .withDefaultSchema()
+//                .withUser("admin")
+//                .password("pass")
+//                .roles("ADMIN", "USER")
+//                .and()
+//                .withUser("user")
+//                .password("pass")
+//                .roles("USER");
+//
+//
+//        auth.inMemoryAuthentication()
+//                .withUser("admin")
+//                .password("pass")
+//                .roles("ADMIN", "USER")
+//                .and()
+//                .withUser("user")
+//                .password("pass")
+//                .roles("USER");
     }
 
     @Override
